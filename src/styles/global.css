@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-950: oklch(0.17 0.02 85);
+  --color-ink-900: oklch(0.22 0.02 85);
+  --color-paper-100: oklch(0.97 0.01 95);
+  --color-accent-300: oklch(0.83 0.11 78);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background:
+    radial-gradient(circle at 50% 105%, rgba(229, 184, 137, 0.24), transparent 28%),
+    radial-gradient(circle at 50% -10%, rgba(122, 49, 74, 0.22), transparent 26%),
+    linear-gradient(180deg, #2a1826 0%, #3a2232 36%, #755957 76%, #1c1419 100%);
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+}

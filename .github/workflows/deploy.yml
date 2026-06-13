@@ -1,0 +1,56 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Derive Astro deploy variables
+        run: |
+          site="https://${{ github.repository_owner }}.github.io"
+          repo="${{ github.event.repository.name }}"
+          user_site_repo="${{ github.repository_owner }}.github.io"
+
+          echo "ASTRO_SITE=$site" >> "$GITHUB_ENV"
+
+          if [ "$repo" = "$user_site_repo" ]; then
+            echo "ASTRO_BASE=" >> "$GITHUB_ENV"
+          else
+            echo "ASTRO_BASE=/$repo" >> "$GITHUB_ENV"
+          fi
+
+      - name: Install, build, and upload site
+        uses: withastro/action@v6
+        env:
+          ASTRO_SITE: ${{ env.ASTRO_SITE }}
+          ASTRO_BASE: ${{ env.ASTRO_BASE }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

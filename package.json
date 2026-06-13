@@ -1,10 +1,8 @@
 {
-  "name": "martinus",
-  "type": "module",
+  "name": "martinus-sifra-2026",
   "version": "0.0.1",
-  "engines": {
-    "node": ">=22.12.0"
-  },
+  "type": "module",
+  "packageManager": "pnpm@11.1.3",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -13,5 +11,12 @@
   },
   "dependencies": {
     "astro": "^6.4.6"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "tailwindcss": "^4.3.1"
   }
 }
