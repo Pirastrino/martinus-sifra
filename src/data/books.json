@@ -4,7 +4,11 @@
     "title": "Stůl pro dva",
     "author": "Amor Towles",
     "link": "https://www.martinus.cz/2946295-stul-pro-dva/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Povídky s noblesní atmosférou, jemnou ironií a důrazem na dialogy.",
+      "Důležité jsou setkání, rozhovory a dvojice lidí.",
+      "V názvu je kus nábytku a číslo."
+    ]
   },
   {
     "id": "2",
@@ -25,14 +29,22 @@
     "title": "Půlnoční knihovna ",
     "author": "Matt Haig",
     "link": "https://www.martinus.cz/636775-pulnocni-knihovna/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Hrdinka dostane šanci nahlédnout do různých verzí svého života.",
+      "Současný román, který spojuje melancholii, fantazii a naději.",
+      "Klíčové místo je plné polic a otevírá se o půlnoci."
+    ]
   },
   {
     "id": "5",
     "title": "Egypťan Sinuhet",
     "author": "Mika Waltari",
     "link": "https://www.martinus.cz/106565-egyptan-sinuhet/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Velký historický román ze starověkého Egypta.",
+      "Vyprávění má rozmáchlý epický styl a silný pocit osudovosti.",
+      "Vypravěčem je lékař, který se pohybuje blízko faraonova dvora."
+    ]
   },
   {
     "id": "6",
@@ -67,14 +79,22 @@
     "title": "Zakletý klášter",
     "author": "Juraj Červenák",
     "link": "https://www.martinus.cz/837823-zaklety-klaster/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Temnější historická detektivka ze střední Evropy.",
+      "Příběh míchá napětí, legendy a drsnou dobovou atmosféru.",
+      "Důležitou roli hraje odlehlý církevní areál a pověst o kletbě."
+    ]
   },
   {
     "id": "11",
     "title": "Svatebčané",
     "author": "Alison Espach",
     "link": "https://www.martinus.cz/3281583-svatebcane/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Současný román odehrávající se během jedné velké rodinné události.",
+      "Tón střídá humor, trapnost i citové propady.",
+      "Název označuje hosty, kteří přijeli na obřad."
+    ]
   },
   {
     "id": "12",
@@ -88,7 +108,11 @@
     "title": "Žítkovské bohyně",
     "author": "Kateřina Tučková",
     "link": "https://www.martinus.cz/347525-zitkovske-bohyne/106395",
-    "hints": ["", "", ""]
+    "hints": [
+      "Silný český román inspirovaný léčitelkami z kopanic.",
+      "Důležitou roli hrají ženské osudy, tradice a utajená minulost.",
+      "V názvu je moravská obec a tajemné označení výjimečných žen."
+    ]
   },
   {
     "id": "14",
@@ -116,14 +140,22 @@
     "title": "Fantastický pan Lišák",
     "author": "Roald Dahl",
     "link": "https://www.martinus.cz/248729-fantasticky-pan-lisak/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Dětská klasika s šibalským humorem a svižným tempem.",
+      "Chytrý zvířecí hrdina přelstívá trojici farmářů.",
+      "V názvu je lichotivé přídavné jméno a rezavá lesní šelma."
+    ]
   },
   {
     "id": "18",
     "title": "Stopařův průvodce Galaxií 1.",
     "author": "Douglas Adams",
     "link": "https://www.martinus.cz/171-stoparuv-pruvodce-galaxii-1/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Nezapomeňte ručník.",
+      "Absurdní britská sci-fi, kde slavná odpověď zní 42.",
+      "V názvu je pomůcka pro cestovatele, jen tentokrát mezihvězdné."
+    ]
   },
   {
     "id": "19",
@@ -144,21 +176,33 @@
     "title": "Robinson Crusoe",
     "author": "Daniel Defoe",
     "link": "https://www.martinus.cz/271505-robinson-crusoe/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Klasika o ztroskotanci a dlouhém životě mimo civilizaci.",
+      "Jeden z archetypálních dobrodružných příběhů o přežití.",
+      "V názvu je celé jméno muže, který se musí naučit přežít sám."
+    ]
   },
   {
     "id": "22",
     "title": "Foucaultovo kyvadlo",
     "author": "Umberto Eco",
     "link": "https://www.martinus.cz/205415-foucaultovo-kyvadlo/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Intelektuální hra s konspiracemi, symboly a tajnými řády.",
+      "Příběh je plný učených narážek, šifer a literárních hádanek.",
+      "Název odkazuje na známý fyzikální experiment."
+    ]
   },
   {
     "id": "23",
     "title": "Kavárna v Kodani",
     "author": "Julie Caplin",
     "link": "https://www.martinus.cz/640603-kavarna-v-kodani/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Romantický útěk do skandinávské atmosféry.",
+      "Velkou roli hrají cestování, jídlo a útulná atmosféra města.",
+      "V názvu je podnik na kávu a hlavní město Dánska."
+    ]
   },
   {
     "id": "24",
@@ -172,14 +216,22 @@
     "title": "Hobit",
     "author": "J.R.R. Tolkien",
     "link": "https://www.martinus.cz/2638963-hobit/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Výprava za pokladem, drakem a jedním nečekaným hrdinou.",
+      "Dobrodružství ve Středozemi je tu hravější a pohádkovější než jindy.",
+      "V názvu je malé stvoření s velkými chlupatými chodidly."
+    ]
   },
   {
     "id": "26",
     "title": "Na Větrné hůrce",
     "author": "Emily Brontë",
     "link": "https://www.martinus.cz/29931-na-vetrne-hurce/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Gothická klasika plná vášně, pomsty a neklidné krajiny.",
+      "Silná atmosféra stojí na divoké přírodě a ničivé posedlosti.",
+      "V názvu je ponuré sídlo bičované větrem."
+    ]
   },
   {
     "id": "27",
@@ -200,7 +252,11 @@
     "title": "Tajemství všech tajemství",
     "author": "Dan Brown",
     "link": "https://www.martinus.cz/3135769-tajemstvi-vsech-tajemstvi/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Thriller plný šifer, symbolů a velkého odhalení.",
+      "Příběh staví na rychlém tempu, tajemstvích a skrytých významech.",
+      "Název slibuje to úplně největší odhalení ze všech."
+    ]
   },
   {
     "id": "30",
@@ -221,7 +277,11 @@
     "title": "Zaklínač",
     "author": "Andrzej Sapkowski",
     "link": "https://www.martinus.cz/33143-zaklinac-i-posledni-prani/3738023",
-    "hints": ["", "", ""]
+    "hints": [
+      "Temnější fantasy se slavným bílým vlkem.",
+      "Mísí se tu slovanská atmosféra, suchý humor a lov nestvůr.",
+      "V názvu je muž, který si vydělává lovem nestvůr."
+    ]
   },
   {
     "id": "33",
@@ -249,21 +309,33 @@
     "title": "Čtvrteční klub amatérských detektivů",
     "author": "Richard Osman",
     "link": "https://www.martinus.cz/641819-ctvrtecni-klub-amaterskych-detektivu/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Parta seniorů řeší vraždy lépe než policie.",
+      "Lehká detektivka staví na důvtipu, humoru a nečekaných vyšetřovatelích.",
+      "V názvu je den v týdnu, spolek a neprofesionální vyšetřovatelé."
+    ]
   },
   {
     "id": "37",
     "title": "Hercule Poirot: Smrt na Nilu",
     "author": "Agatha Christie",
     "link": "https://www.martinus.cz/3013751-hercule-poirot-smrt-na-nilu/kniha",
-    "hints": ["", "", ""]
+    "hints": [
+      "Jeden z nejslavnějších případů belgického detektiva s knírkem.",
+      "Klasická detektivka se odehrává během luxusní plavby po velké řece.",
+      "V názvu je smrt a africký veletok."
+    ]
   },
   {
     "id": "38",
     "title": "Alenka v říši divů",
     "author": "Lewis Carroll",
     "link": "https://www.martinus.cz/463277-alenka-v-risi-divu/1735443",
-    "hints": ["", "", ""]
+    "hints": [
+      "Dívka se propadne do světa plného paradoxů a podivných bytostí.",
+      "Fantazijní příběh si pohrává s logikou, jazykem i snem.",
+      "V názvu je dívčí jméno a velmi neobvyklá země."
+    ]
   },
   {
     "id": "39",

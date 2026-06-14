@@ -55,7 +55,10 @@ const books = Array.from({ length: totalCells }, (_, index) => {
     ...baseBook,
     ...sourceBook,
     hints: Array.isArray(sourceBook.hints)
-      ? [...baseBook.hints, ...sourceBook.hints].slice(0, 3)
+      ? sourceBook.hints
+          .map((hint) => (typeof hint === 'string' ? hint : ''))
+          .concat(baseBook.hints)
+          .slice(0, 3)
       : baseBook.hints,
   };
 });
