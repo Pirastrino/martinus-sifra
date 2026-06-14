@@ -64,8 +64,8 @@ const books = Array.from({ length: totalCells }, (_, index) => {
 });
 ---
 
-<section class="mx-auto flex w-full flex-1 items-center justify-center md:flex-none">
-  <div class="relative w-full max-w-[min(100%,calc((100svh-1.5rem)*0.575625))] overflow-hidden rounded-[1rem] border border-white/10 bg-stone-900 shadow-2xl shadow-black/40 md:max-w-[34rem]">
+<section class="mx-auto flex min-h-0 w-full flex-1 items-end justify-center md:flex-none">
+  <div class="relative h-full max-h-full w-auto max-w-full aspect-[674/1168] overflow-hidden rounded-[1rem] border border-white/10 bg-stone-900 shadow-2xl shadow-black/40 md:h-auto md:max-h-none md:w-full md:max-w-[34rem]">
     <div
       data-board-view
       class="relative cursor-pointer transition-opacity duration-400 ease-out data-[state=hidden]:pointer-events-none data-[state=hidden]:opacity-0"
@@ -76,7 +76,7 @@ const books = Array.from({ length: totalCells }, (_, index) => {
         width={sifra.width}
         height={sifra.height}
         alt={content.imageAlt}
-        class="h-auto w-full select-none object-cover"
+        class="h-full w-full select-none object-cover"
         draggable="false"
       />
 
@@ -197,7 +197,7 @@ const books = Array.from({ length: totalCells }, (_, index) => {
     const visibleHints = filledHints.slice(0, revealedHintsCount);
 
     if (visibleHints.length === 0) {
-      answerHints.innerHTML = `<p>${filledHints.length > 0 ? content.noHintsRevealedText : content.noHintsAvailableText}</p>`;
+      answerHints.innerHTML = filledHints.length > 0 ? '' : `<p>${content.noHintsAvailableText}</p>`;
       return;
     }
 
