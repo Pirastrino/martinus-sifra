@@ -2,15 +2,24 @@
 import "../styles/global.css";
 import SifraBoard from "../components/SifraBoard.astro";
 import logo from "../assets/logo.svg";
+import sifraPreview from "../assets/sifra.png";
 
 const baseUrl = import.meta.env.BASE_URL;
 const assetBaseUrl = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
 const cloudflareAnalyticsToken = import.meta.env
   .PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
+const productionUrl = "https://pirastrino.github.io/martinus-sifra/";
+const canonicalUrl = productionUrl;
+const socialImageUrl = new URL(
+  sifraPreview.src.replace(/^\//, ""),
+  productionUrl,
+).toString();
 const content = {
   pageTitle: "Knižní šifra",
   pageDescription:
-    "Klikací knižní šifra s mřížkou 5 x 8 a daty připravenými pro odpovědi i nápovědy.",
+    "Interaktivní knižní šifra inspirovaná světem knih. Objevuj obrázky, odhaluj nápovědy a hádej názvy knih ukrytých v ilustraci.",
+  pageKeywords:
+    "knižní šifra, Martinus šifra, Martinus knižní šifra, knižní hádanka, knihy, literární kvíz, hádej knihu",
   appButtons: [
     {
       label: "Stáhnout na iOS",
@@ -48,7 +57,22 @@ const content = {
     <link rel="icon" href={`${assetBaseUrl}favicon.ico`} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="description" content={content.pageDescription} />
+    <meta name="keywords" content={content.pageKeywords} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:title" content={content.pageTitle} />
+    <meta property="og:description" content={content.pageDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:image:width" content={String(sifraPreview.width)} />
+    <meta property="og:image:height" content={String(sifraPreview.height)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={content.pageTitle} />
+    <meta name="twitter:description" content={content.pageDescription} />
+    <meta name="twitter:image" content={socialImageUrl} />
     <title>{content.pageTitle}</title>
     {
       cloudflareAnalyticsToken && (

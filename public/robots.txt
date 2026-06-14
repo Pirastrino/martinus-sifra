@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pirastrino.github.io/martinus-sifra/sitemap.xml
