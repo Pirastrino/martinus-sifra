@@ -41,6 +41,7 @@ jobs:
         env:
           ASTRO_SITE: ${{ env.ASTRO_SITE }}
           ASTRO_BASE: ${{ env.ASTRO_BASE }}
+          PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN: ${{ secrets.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN }}
 
   deploy:
     needs: build

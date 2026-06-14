@@ -1,6 +1,6 @@
 ---
-import sifra from '../assets/sifra.png';
-import booksData from '../data/books.json';
+import sifra from "../assets/sifra.png";
+import booksData from "../data/books.json";
 
 type BoardContent = {
   imageAlt: string;
@@ -33,10 +33,10 @@ const { content } = Astro.props as { content: BoardContent };
 
 const fallbackBook = (id: string): Book => ({
   id,
-  title: '',
-  author: '',
-  link: '',
-  hints: ['', '', ''],
+  title: "",
+  author: "",
+  link: "",
+  hints: ["", "", ""],
 });
 
 const sourceBooks = booksData as Book[];
@@ -56,7 +56,7 @@ const books = Array.from({ length: totalCells }, (_, index) => {
     ...sourceBook,
     hints: Array.isArray(sourceBook.hints)
       ? sourceBook.hints
-          .map((hint) => (typeof hint === 'string' ? hint : ''))
+          .map((hint) => (typeof hint === "string" ? hint : ""))
           .concat(baseBook.hints)
           .slice(0, 3)
       : baseBook.hints,
@@ -64,8 +64,12 @@ const books = Array.from({ length: totalCells }, (_, index) => {
 });
 ---
 
-<section class="mx-auto flex min-h-0 w-full flex-1 items-end justify-center md:flex-none">
-  <div class="relative h-full max-h-full w-auto max-w-full aspect-[674/1168] overflow-hidden rounded-[1rem] border border-white/10 bg-stone-900 shadow-2xl shadow-black/40 md:h-auto md:max-h-none md:w-full md:max-w-[34rem]">
+<section
+  class="mx-auto flex min-h-0 w-full flex-1 items-end justify-center md:flex-none"
+>
+  <div
+    class="relative h-full max-h-full w-auto max-w-full aspect-674/1168 overflow-hidden rounded-2xl border border-white/10 bg-stone-900 shadow-2xl shadow-black/40 md:h-auto md:max-h-none md:w-full md:max-w-[34rem]"
+  >
     <div
       data-board-view
       class="relative cursor-pointer transition-opacity duration-400 ease-out data-[state=hidden]:pointer-events-none data-[state=hidden]:opacity-0"
@@ -84,19 +88,21 @@ const books = Array.from({ length: totalCells }, (_, index) => {
         class="absolute inset-0 grid cursor-pointer"
         style={`grid-template-columns: repeat(${columns}, minmax(0, 1fr)); grid-template-rows: repeat(${rows}, minmax(0, 1fr));`}
       >
-        {books.map((book) => (
-          <button
-            type="button"
-            class="group relative cursor-pointer border border-white/8 bg-black/0 transition hover:bg-amber-200/12 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-300/80"
-            data-cell-button
-            data-book-id={book.id}
-            aria-label={`${content.cellAriaLabelPrefix} ${book.id}`}
-          >
-            <span class="pointer-events-none absolute left-2 top-2 text-[10px] font-semibold tracking-[0.24em] text-white/65">
-              {book.id}
-            </span>
-          </button>
-        ))}
+        {
+          books.map((book) => (
+            <button
+              type="button"
+              class="group relative cursor-pointer border border-white/8 bg-black/0 transition hover:bg-amber-200/12 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-300/80"
+              data-cell-button
+              data-book-id={book.id}
+              aria-label={`${content.cellAriaLabelPrefix} ${book.id}`}
+            >
+              <span class="pointer-events-none absolute left-2 top-2 text-[10px] font-semibold tracking-[0.24em] text-white/65">
+                {book.id}
+              </span>
+            </button>
+          ))
+        }
       </div>
     </div>
 
@@ -112,11 +118,22 @@ const books = Array.from({ length: totalCells }, (_, index) => {
           aria-hidden="true"
           class="absolute inset-0 h-full w-full scale-105 object-cover blur-md"
         />
-        <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2)_0%,rgba(0,0,0,0)_100%)]"></div>
-        <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(23,17,22,0.62)_0%,rgba(35,24,32,0.68)_24%,rgba(53,34,45,0.74)_52%,rgba(20,15,19,0.86)_100%)]"></div>
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_110%,rgba(232,189,143,0.26),transparent_24%),radial-gradient(circle_at_50%_-10%,rgba(128,53,76,0.24),transparent_22%)]"></div>
+        <div
+          class="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2)_0%,rgba(0,0,0,0)_100%)]"
+        >
+        </div>
+        <div
+          class="absolute inset-0 bg-[linear-gradient(180deg,rgba(23,17,22,0.62)_0%,rgba(35,24,32,0.68)_24%,rgba(53,34,45,0.74)_52%,rgba(20,15,19,0.86)_100%)]"
+        >
+        </div>
+        <div
+          class="absolute inset-0 bg-[radial-gradient(circle_at_50%_110%,rgba(232,189,143,0.26),transparent_24%),radial-gradient(circle_at_50%_-10%,rgba(128,53,76,0.24),transparent_22%)]"
+        >
+        </div>
 
-        <div class="relative flex min-h-full w-full flex-col overflow-y-auto p-6 sm:p-8">
+        <div
+          class="relative flex min-h-full w-full flex-col overflow-y-auto p-6 sm:p-8"
+        >
           <div class="flex justify-end">
             <button
               type="button"
@@ -128,15 +145,26 @@ const books = Array.from({ length: totalCells }, (_, index) => {
           </div>
 
           <div class="mt-4 space-y-2 sm:mt-6">
-            <h2 data-answer-title class="text-2xl font-semibold text-white sm:text-4xl"></h2>
-            <p data-answer-author class="text-sm text-stone-300 sm:text-base"></p>
+            <h2
+              data-answer-title
+              class="text-2xl font-semibold text-white sm:text-4xl"
+            >
+            </h2>
+            <p data-answer-author class="text-sm text-stone-300 sm:text-base">
+            </p>
           </div>
 
           <div class="mt-6">
-            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-stone-400">
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.22em] text-stone-400"
+            >
               {content.hintsHeading}
             </p>
-            <div data-answer-hints class="mt-2 space-y-2 text-xs leading-6 text-stone-300 sm:text-sm sm:leading-7"></div>
+            <div
+              data-answer-hints
+              class="mt-2 space-y-2 text-xs leading-6 text-stone-300 sm:text-sm sm:leading-7"
+            >
+            </div>
             <button
               type="button"
               data-reveal-button
@@ -149,33 +177,39 @@ const books = Array.from({ length: totalCells }, (_, index) => {
   </div>
 </section>
 
-<script define:vars={{ books, content }}>
-  const buttons = Array.from(document.querySelectorAll('[data-cell-button]'));
-  const boardView = document.querySelector('[data-board-view]');
-  const answerView = document.querySelector('[data-answer-view]');
-  const answerTitle = document.querySelector('[data-answer-title]');
-  const answerAuthor = document.querySelector('[data-answer-author]');
-  const answerHints = document.querySelector('[data-answer-hints]');
-  const revealButton = document.querySelector('[data-reveal-button]');
-  const backButton = document.querySelector('[data-back-button]');
+<script is:inline define:vars={{ books, content }}>
+  const buttons = Array.from(document.querySelectorAll("[data-cell-button]"));
+  const boardView = document.querySelector("[data-board-view]");
+  const answerView = document.querySelector("[data-answer-view]");
+  const answerTitle = document.querySelector("[data-answer-title]");
+  const answerAuthor = document.querySelector("[data-answer-author]");
+  const answerHints = document.querySelector("[data-answer-hints]");
+  const revealButton = document.querySelector("[data-reveal-button]");
+  const backButton = document.querySelector("[data-back-button]");
 
-  const activeClasses = ['bg-amber-200/18', 'ring-2', 'ring-inset', 'ring-amber-200/80'];
-  const revealTransition = 'filter 220ms ease, opacity 220ms ease';
+  const activeClasses = [
+    "bg-amber-200/18",
+    "ring-2",
+    "ring-inset",
+    "ring-amber-200/80",
+  ];
+  const revealTransition = "filter 220ms ease, opacity 220ms ease";
   let selectedBook = null;
   let revealedHintsCount = 0;
   let answerRevealed = false;
 
-  const getFilledHints = (book) => book.hints.filter((hint) => hint.trim().length > 0);
+  const getFilledHints = (book) =>
+    book.hints.filter((hint) => hint.trim().length > 0);
 
   const updateBlur = (isRevealed) => {
     if (!answerTitle || !answerAuthor) {
       return;
     }
 
-    answerTitle.classList.toggle('blur-sm', !isRevealed);
-    answerTitle.classList.toggle('select-none', !isRevealed);
-    answerAuthor.classList.toggle('blur-sm', !isRevealed);
-    answerAuthor.classList.toggle('select-none', !isRevealed);
+    answerTitle.classList.toggle("blur-sm", !isRevealed);
+    answerTitle.classList.toggle("select-none", !isRevealed);
+    answerAuthor.classList.toggle("blur-sm", !isRevealed);
+    answerAuthor.classList.toggle("select-none", !isRevealed);
   };
 
   const setRevealAnimation = (enabled) => {
@@ -183,7 +217,7 @@ const books = Array.from({ length: totalCells }, (_, index) => {
       return;
     }
 
-    const transitionValue = enabled ? revealTransition : 'none';
+    const transitionValue = enabled ? revealTransition : "none";
     answerTitle.style.transition = transitionValue;
     answerAuthor.style.transition = transitionValue;
   };
@@ -197,7 +231,8 @@ const books = Array.from({ length: totalCells }, (_, index) => {
     const visibleHints = filledHints.slice(0, revealedHintsCount);
 
     if (visibleHints.length === 0) {
-      answerHints.innerHTML = filledHints.length > 0 ? '' : `<p>${content.noHintsAvailableText}</p>`;
+      answerHints.innerHTML =
+        filledHints.length > 0 ? "" : `<p>${content.noHintsAvailableText}</p>`;
       return;
     }
 
@@ -206,7 +241,7 @@ const books = Array.from({ length: totalCells }, (_, index) => {
         (hint, index) =>
           `<p><span class="mr-2 inline-block text-amber-200/80">${index + 1}.</span>${hint}</p>`,
       )
-      .join('');
+      .join("");
   };
 
   const updateRevealButton = (book) => {
@@ -220,36 +255,38 @@ const books = Array.from({ length: totalCells }, (_, index) => {
 
     if (hasMoreHints) {
       revealButton.textContent =
-        revealedHintsCount === 0 ? content.revealFirstHintLabel : content.revealNextHintLabel;
+        revealedHintsCount === 0
+          ? content.revealFirstHintLabel
+          : content.revealNextHintLabel;
       revealButton.disabled = false;
-      revealButton.classList.remove('hidden');
+      revealButton.classList.remove("hidden");
       return;
     }
 
     if (!answerRevealed && hasTitle) {
       revealButton.textContent = content.revealAnswerLabel;
       revealButton.disabled = false;
-      revealButton.classList.remove('hidden');
+      revealButton.classList.remove("hidden");
       return;
     }
 
     if (answerRevealed && hasTitle && selectedBook?.link) {
       revealButton.textContent = content.openShopLabel;
       revealButton.disabled = false;
-      revealButton.classList.remove('hidden');
+      revealButton.classList.remove("hidden");
       return;
     }
 
     if (answerRevealed && hasTitle) {
       revealButton.textContent = content.noAnswerLabel;
       revealButton.disabled = true;
-      revealButton.classList.remove('hidden');
+      revealButton.classList.remove("hidden");
       return;
     }
 
     revealButton.textContent = content.noAnswerLabel;
     revealButton.disabled = true;
-    revealButton.classList.remove('hidden');
+    revealButton.classList.remove("hidden");
   };
 
   const updateAnswerView = (book) => {
@@ -275,8 +312,8 @@ const books = Array.from({ length: totalCells }, (_, index) => {
     revealedHintsCount = 0;
     answerRevealed = false;
     setRevealAnimation(false);
-    boardView?.setAttribute('data-state', 'hidden');
-    answerView?.setAttribute('data-state', 'visible');
+    boardView?.setAttribute("data-state", "hidden");
+    answerView?.setAttribute("data-state", "visible");
     updateAnswerView(book);
   };
 
@@ -291,20 +328,20 @@ const books = Array.from({ length: totalCells }, (_, index) => {
   };
 
   buttons.forEach((button) => {
-    button.addEventListener('click', () => {
+    button.addEventListener("click", () => {
       const book = books.find((item) => item.id === button.dataset.bookId);
       renderBook(book);
-      setActiveButton(button.dataset.bookId ?? '');
+      setActiveButton(button.dataset.bookId ?? "");
     });
   });
 
-  revealButton?.addEventListener('click', () => {
+  revealButton?.addEventListener("click", () => {
     if (!selectedBook) {
       return;
     }
 
     if (answerRevealed && selectedBook.link) {
-      window.open(selectedBook.link, '_blank', 'noopener,noreferrer');
+      window.open(selectedBook.link, "_blank", "noopener,noreferrer");
       return;
     }
 
@@ -323,13 +360,13 @@ const books = Array.from({ length: totalCells }, (_, index) => {
     }
   });
 
-  backButton?.addEventListener('click', () => {
-    answerView?.setAttribute('data-state', 'hidden');
-    boardView?.setAttribute('data-state', 'visible');
+  backButton?.addEventListener("click", () => {
+    answerView?.setAttribute("data-state", "hidden");
+    boardView?.setAttribute("data-state", "visible");
     selectedBook = null;
     revealedHintsCount = 0;
     answerRevealed = false;
     setRevealAnimation(false);
-    setActiveButton('');
+    setActiveButton("");
   });
 </script>
