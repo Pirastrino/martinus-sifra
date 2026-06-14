@@ -72,7 +72,7 @@ const books = Array.from({ length: totalCells }, (_, index) => {
   >
     <div
       data-board-view
-      class="relative cursor-pointer transition-opacity duration-400 ease-out data-[state=hidden]:pointer-events-none data-[state=hidden]:opacity-0"
+      class="relative transition-opacity duration-400 ease-out data-[state=hidden]:pointer-events-none data-[state=hidden]:opacity-0"
       data-state="visible"
     >
       <img
@@ -85,17 +85,18 @@ const books = Array.from({ length: totalCells }, (_, index) => {
       />
 
       <div
-        class="absolute inset-0 grid cursor-pointer"
+        class="absolute inset-0 grid"
         style={`grid-template-columns: repeat(${columns}, minmax(0, 1fr)); grid-template-rows: repeat(${rows}, minmax(0, 1fr));`}
       >
         {
           books.map((book) => (
             <button
               type="button"
-              class="group relative cursor-pointer border border-white/8 bg-black/0 transition hover:bg-amber-200/12 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-300/80"
+              class="group relative border border-white/8 bg-black/0 transition enabled:cursor-pointer enabled:hover:bg-amber-200/12 enabled:focus:outline-none enabled:focus:ring-2 enabled:focus:ring-inset enabled:focus:ring-amber-300/80 disabled:cursor-default"
               data-cell-button
               data-book-id={book.id}
               aria-label={`${content.cellAriaLabelPrefix} ${book.id}`}
+              disabled={!book.title}
             >
               <span class="pointer-events-none absolute left-2 top-2 text-[10px] font-semibold tracking-[0.24em] text-white/65">
                 {book.id}
