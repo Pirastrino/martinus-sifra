@@ -350,9 +350,13 @@
   },
   {
     "id": "40",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Babylon",
+    "author": "R.F. Kuang",
+    "link": "https://www.martinus.cz/2856453-babylon/kniha",
+    "hints": [
+      "Temnější fantasy zasazená do univerzitního prostředí a světa jazyků.",
+      "Velkou roli hrají překlad, moc impéria a magie ukrytá ve slovech.",
+      "Název odkazuje na věž, město i slavný symbol jazykového chaosu."
+    ]
   }
 ]
