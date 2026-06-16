@@ -246,10 +246,14 @@
   },
   {
     "id": "28",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Solaris",
+    "author": "Stanislaw Lem",
+    "link": "https://www.martinus.cz/46997-solaris/kniha",
+    "hints": [
+      "Filozofická sci-fi odehrávající se na výzkumné stanici daleko od Země.",
+      "V centru stojí tajemná planeta, která zrcadlí lidskou mysl a vzpomínky.",
+      "Název zní jako jméno světa osvětleného sluncem."
+    ]
   },
   {
     "id": "29",
