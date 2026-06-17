@@ -127,10 +127,14 @@
   },
   {
     "id": "15",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Vladař",
+    "author": "Niccoló Machiavelli",
+    "link": "https://www.martinus.cz/665307-vladar/2429593",
+    "hints": [
+      "Krátký, ale vlivný text o moci, politice a udržení vlády.",
+      "Vznikl v renesanční Itálii a proslul velmi střízlivým pohledem na vládnutí.",
+      "Název označuje toho, kdo drží otěže státu."
+    ]
   },
   {
     "id": "16",
