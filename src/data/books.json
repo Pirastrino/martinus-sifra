@@ -69,10 +69,14 @@
   },
   {
     "id": "9",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Čtvrté křídlo",
+    "author": "Rebecca Yarros",
+    "link": "https://www.martinus.cz/2786949-ctvrte-kridlo/kniha",
+    "hints": [
+      "Romantasy zasazené do nebezpečné vojenské akademie.",
+      "Přežít znamená obstát mezi jezdci, soupeři a draky.",
+      "V názvu je pořadové číslo a část těla, kterou mají ptáci i draci."
+    ]
   },
   {
     "id": "10",
