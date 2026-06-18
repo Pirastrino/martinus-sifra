@@ -167,10 +167,14 @@
   },
   {
     "id": "19",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Malá mořská víla",
+    "author": "Hans Christian Andersen",
+    "link": "https://www.martinus.cz/2611585-mala-morska-vila/kniha",
+    "hints": [
+      "Klasická pohádka o touze opustit podmořský svět kvůli lásce.",
+      "Důležitou roli hraje hlas, oběť a dohoda, která není zadarmo.",
+      "V názvu je drobná bytost z moře."
+    ]
   },
   {
     "id": "20",
