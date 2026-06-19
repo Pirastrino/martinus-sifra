@@ -12,10 +12,14 @@
   },
   {
     "id": "2",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Dračí oko",
+    "author": "Dugald A. Steer",
+    "link": "https://www.martinus.cz/660811-draci-oko/kniha",
+    "hints": [
+      "Dobrodružná fantasy kniha spojená se světem draků a tajemných artefaktů.",
+      "Velkou roli hraje prastaré tajemství a pátrání po výjimečném předmětu.",
+      "V názvu je mytický tvor a část těla, která vidí."
+    ]
   },
   {
     "id": "3",
