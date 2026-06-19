@@ -124,10 +124,14 @@
   },
   {
     "id": "14",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Citadela",
+    "author": "Antoine de Saint-Exupéry",
+    "link": "https://www.martinus.cz/48153-citadela/917003",
+    "hints": [
+      "Meditativní a filozofický text o řádu, odpovědnosti a smyslu lidského života.",
+      "Nejde o klasický příběh, spíš o soubor úvah a obrazů z pouštního světa.",
+      "Název označuje pevnost, která se tyčí nad krajinou."
+    ]
   },
   {
     "id": "15",
