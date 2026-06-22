@@ -339,10 +339,14 @@
   },
   {
     "id": "35",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Pí a jeho život",
+    "author": "Yann Martel",
+    "link": "https://www.martinus.cz/415413-pi-a-jeho-zivot/kniha",
+    "hints": [
+      "Dobrodružný a filozofický příběh o přežití daleko od pevniny.",
+      "Hrdina sdílí záchranný člun s nebezpečným zvířecím společníkem.",
+      "V názvu je řecké písmeno a slovo pro lidskou existenci."
+    ]
   },
   {
     "id": "36",
