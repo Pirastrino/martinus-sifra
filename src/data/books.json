@@ -328,10 +328,14 @@
   },
   {
     "id": "34",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Problém tří těles",
+    "author": "Liou Cch´-Sin",
+    "link": "https://www.martinus.cz/781447-problem-tri-teles/kniha",
+    "hints": [
+      "Rozsáhlá hard sci-fi propojující vědu, dějiny a první kontakt.",
+      "Důležitou roli hraje signál vyslaný do vesmíru a civilizace z velmi neklidného systému.",
+      "Název odkazuje na slavnou fyzikální úlohu, kde nestačí jen dvě planety."
+    ]
   },
   {
     "id": "35",
