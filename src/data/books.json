@@ -52,10 +52,14 @@
   },
   {
     "id": "6",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Na východ od ráje",
+    "author": "John Steinbeck",
+    "link": "https://www.martinus.cz/179215-na-vychod-od-raje/kniha",
+    "hints": [
+      "Rozsáhlá rodinná sága o vině, svobodné vůli a lidské povaze.",
+      "Příběh čerpá z biblických motivů a odehrává se v kalifornském údolí.",
+      "Název určuje směr od místa, které bývá spojováno s dokonalostí."
+    ]
   },
   {
     "id": "7",
