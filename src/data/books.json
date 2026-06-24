@@ -395,10 +395,14 @@
   },
   {
     "id": "39",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Rozum a cit",
+    "author": "Jane Austen",
+    "link": "https://www.martinus.cz/1748003-rozum-a-cit/kniha",
+    "hints": [
+      "Klasický román o sestrách, lásce a společenských pravidlech.",
+      "Jedna hrdinka spoléhá víc na zdrženlivost, druhá na prudké emoce.",
+      "V názvu proti sobě stojí hlava a srdce."
+    ]
   },
   {
     "id": "40",
