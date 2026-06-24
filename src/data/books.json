@@ -300,10 +300,14 @@
   },
   {
     "id": "30",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Othello",
+    "author": "William Shakespeare",
+    "link": "https://www.martinus.cz/90625-othello/kniha",
+    "hints": [
+      "Tragický příběh, v němž zkázu pohání žárlivost a manipulace.",
+      "Důležitou roli hraje zrádný našeptávač a jeden osudový důkaz lásky.",
+      "Název tvoří jediné mužské jméno."
+    ]
   },
   {
     "id": "31",
