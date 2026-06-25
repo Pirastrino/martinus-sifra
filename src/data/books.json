@@ -67,10 +67,14 @@
   },
   {
     "id": "7",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Generál ve svém labyrintu",
+    "author": "Gabriel García Márquez",
+    "link": "https://www.martinus.cz/222869-general-ve-svem-labyrintu/kniha",
+    "hints": [
+      "Historický román o slavném vojevůdci na konci jeho životní cesty.",
+      "Děj sleduje unaveného osvoboditele, který bilancuje moc, porážky i vlastní legendu.",
+      "V názvu je vojenská hodnost a spletité místo, z něhož se těžko hledá cesta ven."
+    ]
   },
   {
     "id": "8",
