@@ -78,10 +78,14 @@
   },
   {
     "id": "8",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Ostře sledované vlaky",
+    "author": "Bohumil Hrabal",
+    "link": "https://www.martinus.cz/18499-ostre-sledovane-vlaky/kniha",
+    "hints": [
+      "Příběh mladého železničáře se odehrává za války v prostředí malé stanice.",
+      "Vedle okupace a napětí tu hraje velkou roli i trapnost dospívání a obyčejný provoz na kolejích.",
+      "V názvu je něco, co se pečlivě hlídá, a dopravní soupravy jezdící po tratích."
+    ]
   },
   {
     "id": "9",
