@@ -122,10 +122,14 @@
   },
   {
     "id": "12",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Nadace",
+    "author": "Isaac Asimov",
+    "link": "https://www.martinus.cz/16041-nadace/1330989",
+    "hints": [
+      "Klasická sci-fi sága o snaze zachránit vědění před pádem obrovské říše.",
+      "Klíčovou roli hraje matematická předpověď budoucnosti celých civilizací.",
+      "Název označuje instituci, která má být zárodkem nového začátku."
+    ]
   },
   {
     "id": "13",
