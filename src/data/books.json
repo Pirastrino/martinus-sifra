@@ -331,10 +331,14 @@
   },
   {
     "id": "31",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Kronika ptáčka na klíček",
+    "author": "Haruki Murakami",
+    "link": "https://www.martinus.cz/512593-kronika-ptacka-na-klicek/kniha",
+    "hints": [
+      "Rozsáhlý román, kde se obyčejné pátrání postupně propadá do snů, paměti a podivných symbolů.",
+      "Důležitou roli hraje zmizelá žena, osamělý muž, studna a hranice mezi realitou a něčím skrytým.",
+      "V názvu je záznam událostí a malý mechanický pták, kterého je potřeba natáhnout."
+    ]
   },
   {
     "id": "32",
