@@ -166,10 +166,14 @@
   },
   {
     "id": "16",
-    "title": "",
-    "author": "",
-    "link": "",
-    "hints": ["", "", ""]
+    "title": "Modlitba za Černobyl",
+    "author": "Světlana Alexijevič",
+    "link": "https://www.martinus.cz/2289415-modlitba-za-cernobyl/kniha",
+    "hints": [
+      "Silná dokumentární próza složená z hlasů lidí zasažených jadernou katastrofou.",
+      "Místo jednoho hrdiny tu mluví přeživší, vdovy, vojáci i ti, kteří zůstali v zakázané zóně.",
+      "V názvu se potkává prosba nebo tichý obřad s místem, které se stalo symbolem havárie."
+    ]
   },
   {
     "id": "17",
